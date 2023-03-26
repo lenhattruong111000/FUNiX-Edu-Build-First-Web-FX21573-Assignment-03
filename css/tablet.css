@@ -1,0 +1,94 @@
+/* tablet 768px*/
+@media (max-width: 992px) {
+  /* .container {
+    margin-left: 20px;
+    margin-right: 20px;
+  } */
+  /* ======================================================== experience ,activity, hobby,...================================================== */
+
+  .experience {
+    margin-top: 0px;
+
+    height: max-content;
+    grid-auto-flow: row dense;
+  }
+
+  /* experience */
+  .e1 {
+    grid-column: 1/2;
+    grid-row: 1 / 9;
+  }
+  /* education */
+  .e2 {
+    grid-column: 2/3;
+    grid-row: 6/12;
+  }
+  /* activity */
+  .e3 {
+    grid-column: 2/3;
+    grid-row: 1/6;
+  }
+  /* hobby */
+  .e4 {
+    grid-column: 2/3;
+    grid-row: 12/15;
+  }
+  /* language */
+  .e5 {
+    grid-column: 1/2;
+    grid-row: 13/16;
+  }
+  /* skill */
+  .e6 {
+    grid-column: 1/2;
+    grid-row: 9/13;
+  }
+
+  .title-icon {
+    /* flex-direction: column-reverse; */
+    margin-top: 20px;
+    height: 90px;
+  }
+  .icon-item {
+    align-self: self-end;
+  }
+  .info-title {
+    font-size: 1.5em;
+    align-self: self-start;
+  }
+
+  .job-info-details {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(15, 100px);
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* ==================================================================reward block============================================================= */
+  .certification-items {
+    flex-flow: column;
+  }
+
+  /*=================================================================== project block============================================================ */
+  .project-container {
+    justify-content: start;
+    gap: 10px;
+  }
+
+  .project-info-details {
+    max-width: min-content;
+    height: auto;
+    overflow: auto;
+  }
+
+  .project-general-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+  }
+
+  .el-3 {
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+}

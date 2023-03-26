@@ -1,0 +1,636 @@
+/* =========================================================Le Nhat Truong FX21573============================================================== */
+* {
+  margin: 0px;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+
+/* color back ground with 2 colors */
+.bg-grey-2 {
+  background: -webkit-linear-gradient(
+    left,
+    #f7f7f7,
+    #f7f7f7 50%,
+    rgb(235, 234, 234) 50%,
+    rgb(235, 234, 234)
+  );
+}
+
+/* body {
+  margin: 10px;
+} */
+
+/* =========================================================banner block======================================================================== */
+/* background-image banner */
+.background-banner {
+  background-color: aqua;
+
+  /* set background- image with url */
+  background-image: url("../images/banner.jpg");
+
+  /* image full div tag */
+  /* background-size: cover; */
+
+  background-size: 100% 100%;
+
+  /* no-repeat image */
+  background-repeat: no-repeat;
+
+  /* set size for background   */
+  height: 500px;
+  width: auto;
+
+  /* reduce brightness of image from 100% to 50% */
+  filter: brightness(0.5);
+
+  /* set opacity */
+  opacity: 0.9;
+
+  /* set position for words on back-ground image */
+  position: relative;
+}
+
+.name-and-job {
+  /* set absolute type for position */
+  position: absolute;
+
+  /* set position for block name-and-job on background-banner */
+  top: 100px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  /* set words color */
+  color: white;
+  /* set  block full-name and block job-name in center */
+  text-align: center;
+}
+
+.full-name {
+  /* set font-size */
+  font-size: large;
+}
+
+.job-name {
+  /* set font-size */
+  font-size: medium;
+}
+
+/* =========================================================nav-bar block====================================================================== */
+section > .container {
+  width: 1170px;
+  margin: auto;
+  display: block;
+
+  box-sizing: border-box;
+}
+
+.nav-bar-components {
+  /* background-color: aqua; */
+
+  /* using flex to display */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+/* set size, format,... for components */
+.nav-bar-components > div {
+  height: 60px;
+  text-align: center;
+  font-size: 12px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-left: 1px solid rgb(227, 223, 223);
+}
+
+.basic-info,
+.personal-info,
+.certification-info,
+.project-info {
+  flex-grow: 1;
+}
+
+.basic-info {
+  /* set order  */
+  order: 1;
+}
+.personal-info {
+  /* set order  */
+  order: 2;
+}
+
+.certification-info {
+  /* set order  */
+  order: 4;
+}
+.project-info {
+  /* set order  */
+  order: 5;
+  border-right: 1px solid rgb(227, 223, 223);
+}
+
+.display-name-and-job {
+  display: flex;
+  /* set order  */
+  order: 3;
+  /* set initial lenght for this block is 500px  */
+  /* relative set lenght of block: flex-shrink, flex-grow */
+  flex-grow: 3;
+  color: black;
+  align-items: center;
+  justify-content: center;
+}
+
+.name-job {
+  display: flex;
+  flex-direction: column;
+}
+
+.display-full-name,
+.display-job-name {
+  display: inline-block;
+}
+
+.display-full-name {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.display-job-name {
+  font-size: 10px;
+  color: #8a8383;
+}
+
+/* format a:link in nav-bar */
+.nav-bar-components > div > a:link,
+a:hover,
+a:visited {
+  /* set color for link */
+  color: black;
+  /* remove the underline of link */
+  text-decoration: none;
+  /* capital all letters  */
+  text-transform: uppercase;
+}
+
+/* coloring for icon */
+.icon-user,
+.icon-doc-text-inv,
+.icon-mail-alt,
+.icon-star-1,
+.icon-twitter,
+.icon-facebook,
+.icon-gplus,
+.icon-linkedin,
+.icon-facebook-circled,
+.icon-linkedin-circled,
+.icon-github-circled {
+  color: rgb(39, 153, 187);
+}
+
+#nav-bar {
+  text-align: center;
+}
+
+/* =========================================================================job objective and personal infor block============================= */
+.job-objective {
+  padding-right: 50px;
+  padding-left: 50px;
+}
+.job-objective-personal-details {
+  /* background-color: aqua; */
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.job-objective-personal-details > div {
+  justify-items: flex-start;
+  /* margin-left: 30px; */
+  width: 50%;
+}
+
+.job-objective-title,
+.personal-details-title {
+  padding-bottom: 20px;
+}
+
+/* personal details */
+.personal-details {
+  padding-left: 50px;
+}
+
+.personal-details-content-items {
+  line-height: 1.5;
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+/* social media icon list */
+.social-media {
+  padding-top: 20px;
+}
+
+.socical-media-icons {
+  display: flex;
+  gap: 7px;
+}
+
+.job-objective-content,
+.personal-details-content {
+  font-size: 12px;
+}
+/* ===========================================================end job objective and personal infor block======================================== */
+.job-info-details {
+  /* using grid to display */
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.experience {
+  margin-top: 20px;
+  border: 3px solid #f7f7f7;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.title-icon {
+  margin-top: 50px;
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-bottom: 50px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.view-more > button {
+  border: none;
+  border-radius: 30%;
+  text-transform: uppercase;
+  font-size: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: yellow;
+}
+
+.info-title {
+  align-self: center;
+  font-size: 2em;
+  width: max-content;
+}
+
+/* color and resize for icon */
+.ic-toolbox,
+.ic-pencil,
+.ic-toolbox,
+.ic-telescope,
+.ic-mic,
+.ic-tools-2 {
+  font-size: 3em;
+  color: #dcd7d7;
+}
+
+.name-item-description {
+  color: black;
+  font-weight: bold;
+  font-size: large;
+  padding-bottom: 10px;
+}
+
+.time {
+  color: #8a8383;
+  font-style: italic;
+  padding-bottom: 10px;
+}
+
+/* format time in present Ex: Hiện tại */
+.time span {
+  background-color: rgb(25, 162, 225);
+  color: white;
+  border-radius: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.info-content {
+  margin-bottom: 100px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.details-description {
+  color: rgb(25, 162, 225);
+  padding-left: 15px;
+}
+
+/* distance between 2 component. Ex: công ty X and công ty y*/
+.details-description li {
+  padding-bottom: 20px;
+}
+
+/* set distance between 2 li  */
+.details-description li ul li {
+  padding-bottom: 0px;
+}
+
+/*set color, and remove the circle in li  */
+.details-description-items {
+  list-style-type: none;
+  color: #8a8383;
+  padding-left: 0px;
+  padding-right: 40px;
+}
+
+/* ============================================================hobby, language, skills  block ==================================================*/
+.hobby-component {
+  display: flex;
+  text-align: center;
+  justify-content: flex-start;
+  gap: 5px;
+  line-height: 2;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+/* set size for block that contains the icon */
+.hobby-name-and-icon {
+  height: 50px;
+  width: 50px;
+}
+/* work with icon */
+.ic-megaphone,
+.ic-strategy,
+.ic-hotairballoon,
+.ic-basket {
+  box-sizing: border-box;
+  /* set incon in square shape */
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding-top: 25%;
+  padding-bottom: 25%;
+  color: rgb(25, 162, 225);
+  /* set size of icon */
+  font-size: 1.5em;
+  border: 1px solid rgb(25, 162, 225);
+  /* circle border */
+  border-radius: 50% 50% 50% 50%;
+}
+.hobby-name {
+  font-size: 10px;
+}
+/*============================================================ language and skill block=======================================================*/
+.language-component,
+.skill-component {
+  line-height: 3;
+}
+
+/* level skill */
+/* idea: create 3 tag lvl-1, lvl-2, lvl-3 having the same blue color */
+/* level-1: Fundamental mean: blue grey grey */
+/* level-2: Intermediate mean: blue blue grey*/
+/* level-3: master mean: blue blue blue */
+.level-1,
+.level-2,
+.level-3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  gap: 10px;
+}
+/* color level bar */
+.lvl-1,
+.lvl-2,
+.lvl-3 {
+  background-color: rgb(25, 162, 225);
+  width: 60px;
+  height: 2px;
+}
+/* Fundamental */
+.level-1 > lvl-2 {
+  background-color: #8a8383;
+}
+.level-1 > lvl-3 {
+  background-color: #8a8383;
+}
+
+/*Intermediate */
+.level-2 > lvl-3 {
+  background-color: #8a8383;
+}
+
+/* =====================================================================certification and reward block========================================  */
+.section-title {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+/* using grid to display 3 certification items  */
+.certification-component {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-content: space-around;
+  row-gap: 30px;
+}
+/* using flex to display certification img and certification content */
+.certification-items {
+  box-sizing: border-box;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 20px;
+  display: flex;
+  gap: 30px;
+}
+
+/* cedrtification 2 */
+.cer-2 {
+  padding-left: 20px;
+}
+
+/* certification 3 */
+.cer-3 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  /* certification-3 located in 2 cells */
+  grid-column: 1/4;
+}
+
+/* color the right side of block cer-1 */
+.boder-right {
+  border-right: 1px solid coral;
+}
+
+/* color the top side of block cer-3 */
+.border-top {
+  border-top: 1px solid coral;
+}
+
+.certificattion-img {
+  justify-self: center;
+}
+/* set img size */
+.certificattion-img > img {
+  display: block;
+  height: 120px;
+  width: auto;
+}
+
+/* bold and capital all letter */
+.certification-name {
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+/* delete the padding of li */
+.certification-description {
+  padding-left: 0px;
+}
+/* delete the soilid circle of li */
+.certification-description > li {
+  list-style-type: none;
+}
+
+/* =======================================================Project block======================================================================== */
+
+.section-title {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* using flex to display 3 project in row */
+.project-container {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #8a8383;
+
+  /* resize default auto valute of min-width and min height */
+  /* to prevent overflow (grid layout bigger than div tag) */
+  min-width: 0;
+  min-height: 0;
+}
+
+/* using flex to display  content of 3 projects in column */
+.project-info-details {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #d4cfcf;
+
+  /* this line prevent the overflow */
+  overflow: hidden;
+  min-width: 0;
+}
+
+/* set size background-image */
+.project-img {
+  height: 300px;
+  background-color: aqua;
+}
+
+.project-img-1,
+.project-img-2,
+.project-img-3 {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.project-img-1 {
+  background-image: url("../images/project_1.png");
+}
+
+.project-img-2 {
+  background-image: url("../images/project_2.png");
+}
+
+.project-img-3 {
+  background-image: url("../images/project_3.png");
+}
+
+.project-name,
+.project-general-info,
+.project-year,
+.project-description {
+  padding-left: 15px;
+}
+
+.project-name {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.project-general-info,
+.project-description {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+  border-top: 2px solid #d4cfcf;
+}
+
+.project-general-info {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.project-year,
+.project-icon-title {
+  width: min-content;
+  box-sizing: border-box;
+}
+.project-year {
+  background-color: rgb(25, 162, 225);
+  color: white;
+  border-radius: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.project-icon-title {
+  display: flex;
+}
+
+.project-description {
+  display: flex;
+  gap: 5px;
+}
+.project-description-name {
+  height: 50px;
+  width: 120px;
+}
+
+.project-description-content {
+  height: auto;
+  width: 375px;
+}
+/* ==========================================================footer block ======================================================================*/
+.footer-component {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.footer-component li {
+  padding-right: 20px;
+  display: inline-block;
+  list-style-type: none;
+  font-size: 20px;
+}
+
+.footer-component > li > a:hover,
+a:visited,
+a:link {
+  text-decoration: none;
+  color: black;
+  text-transform: none;
+}
+/* ================================ */
+/* hidden */
+.hidden {
+  display: none;
+}
